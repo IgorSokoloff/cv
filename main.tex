@@ -1,0 +1,376 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\PassOptionsToPackage{english,german,russian}{babel}
+\documentclass[]{deedy-resume-openfont}
+
+%%% Страница
+%\usepackage{extsizes} % Возможность сделать 14-й шрифт
+\usepackage{geometry} % Простой способ задавать поля
+\geometry{top=5mm}
+\geometry{bottom=5mm}
+\geometry{left=5mm}
+\geometry{right=5mm}
+
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{comment}
+
+\usepackage[T2A]{fontenc}
+
+\usepackage{fontspec}      %% подготавливает загрузку шрифтов Open Type, True Type и др.
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}  %% свойства шрифтов по умолчанию
+
+\usepackage{amsmath,amsfonts,amsthm,amssymb,amsbsy,amstext,amscd,amsxtra,multicol}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+\usepackage{newtxmath}
+%\usepackage[english,russian]{babel}
+
+\definecolor{urlcolor}{HTML}{004DFF} % цвет гиперссылок
+ 
+\hypersetup{pdfstartview=FitH,linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\newcommand{\un}{\underline}
+\newcommand{\sm}{\smash}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Igor}{Sokolov}{Moscow, Russian Federation\quad|\quad+7 (916) 971 42 49 \quad|\quad \href{mailto:igor.a.sokolov@phystech.edu}{igor.a.sokolov@phystech.edu} \quad|\quad \href{https://github.com/IgorSokoloff}{GitHub account}}
+
+%Dolgoprudny, Moscow Oblast,\\
+%Russian Federation\\
+%+7 (916) 971 42 49\\
+%\href{mailto:igor.a.sokolov@phystech.edu}{igor.a.sokolov@phystech.edu}\\
+%\href{https://github.com/IgorSokoloff}{GitHub account}
+
+
+%\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+%	\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{objective}
+%To obtain a position of the MS student at the The Universit{\'e} Grenoble Alpes
+\section{education}
+\runsubsection{Moscow Institute of Physics and Technology}\\
+\begin{tightemize}
+	\item
+\descript{Bachelor of sciences}\\
+Department of Control and Applied Mathematics\\
+Specialization: Applied Mathematics and Physics\\
+Thesis: Stochastic coordinate descent method with arbitrary sampling\\
+\normalsize Supervisor: Peter Richt{\'a}rik\\
+\location{Sep 2014 -- Aug 2019}
+\location{GPA: 4.69/5}
+\vspace{0.1em}
+\item
+\descript{Master of sciences}\\
+Department of Control and Applied Mathematics\\
+Specialization: Applied Mathematics and Physics\\
+\location{GPA: 4.85/5}
+\location{Sep 2019 -- Present}
+\end{tightemize}
+\vspace{0.1em}
+%\begin{tightemize}
+%\item Calculus, Complex analysis, Analytic geometry, Linear algebra, Differential equations, Partial differential equations
+%\item Probability theory, Stochastic processes, Mathematical statistics, Machine learning
+%\item Basics of convex analysis, Optimization, Computational mathematics
+%\item Boolean algebra, Combinatorics, Graph theory, The basics of abstract algebra, Theory of formal systems and algorithms,  Theory and implementation of programming languages
+%\end{tightemize}
+%\sectionsep
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research interests}
+%\runsubsection{}
+\descript{}
+Randomized and distributed optimization methods for machine learning
+\section{Skills}
+%\runsubsection{}
+%\location{}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{0.2em}
+%\begin{itemize}
+%\begin{tightemize}
+%\item \un{\sm{Relational Database Management System:}} MS SQL\\
+%(\href{https://github.com/IgorSokoloff/MIPT_DCAM_DATABASE}{Lab works on Github})\\
+%\end{tightemize}
+%\begin{tightemize}
+%\item OS: Windows, Linux
+%\end{tightemize}
+%\item Layout: \LaTeX\\
+%\end{itemize}
+%\runsubsection{Languages}
+\descript{Programming languages:} python, matlab, C/C++, T-SQL, \LaTeX\\
+\descript{Languages:} Russian (Native),  English (B2), German(A2)
+\section{Work}
+\vspace{0.1em}
+\runsubsection{Moscow Institute of Physics and Technology}
+\begin{tightemize}
+	\item 
+\descript{Research group of randomized algorithms for distributed optimization problems}\\
+%Supervisor: Peter Richt{\'a}rik\\
+Junior researcher\\
+\location{Sep 2018 – Present}
+\end{tightemize}
+\section{Internships}
+%\runsubsection{}
+\runsubsection{King Abdullah University of Science and Technology}
+\vspace{0.1em}
+\begin{tightemize}
+	\item 
+\descript{Visual Computing Center}\\
+%\normalsize Supervisor: Peter Richt{\'a}rik\\
+\location{Kingdom of Saudi Arabia}
+\location{Jan 2019 – Feb 2019}
+\end{tightemize}
+\vspace{0.1em}	   
+\section{Conferences \& Talks}
+\vspace{0.5em}
+\begin{tightemize}
+\item 
+\descript{Seminar "Modern Optimization Methods"}
+\vspace{0.5em}
+\begin{tightemize}
+	\item Talk: A coordinate descent method without preprocessing\\ 
+	\location{17 December 2019}
+	\descript{}
+	\item Talk: Accelerated coordinate descent with arbitrary sampling\\ 
+	\location{18 March 2019}
+\end{tightemize}
+%\vspace{0.5em}
+	\item
+\descript{ Sixth International Conference on Continuous Optimization}\\
+\location{Berlin, August 2019}
+%\vspace{0.5em}
+\item
+\descript{Traditional Math School (Machine learning and Optimization)}\\
+\location{Voronovo, June 2018}
+\item
+%\vspace{0.5em}
+\descript{Computer science conference for pupils}\\
+\location{Moscow, June 2012}
+%\vspace{0.5em}
+\item
+\descript{Computer science conference for pupils}\\
+\location{Moscow, June 2011}
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+\section{Papers} 
+\vspace{0.5em}
+\begin{tightemize}
+	\item
+\descript{Stochastic coordinate descent with random stepsize and arbitrary sampling}\\
+\location{Being prepared to submission to the "Optimization letters"}
+\location{February 2020}
+\end{tightemize}
+\section{TRAINING} 
+\runsubsection{samsung research russia}
+\begin{tightemize}
+	\item	
+\descript{Machine learning in business analytics}\\
+\location{July 2019}
+\end{tightemize}
+\vspace{0.5em}
+\runsubsection{coursera}
+%\vspace{1em}
+\begin{tightemize}
+\item	
+\descript{Introduction to Deep Learning}\\
+\location{January 2020 - Present}
+%\vspace{1.0em}
+\vspace{0.2em}
+\item
+\descript{Divide and Conquer, Sorting and Searching, and Randomized Algorithms}\\
+\location{May 2019}
+%\vspace{1.0em}
+\vspace{0.2em}
+\item
+\descript{Mathematics and Python for data analysis}\\
+\location{June 2017 - July 2017}
+%\vspace{1.0em}
+\end{tightemize}
+%\subsection{Coursera}
+%\descript{Python for data analysis}
+%\location{Sep 2016 -- Present}
+\sectionsep
+
+\runsubsection{Computer Training Center}
+\begin{tightemize}
+	\item 
+\descript{Setting and repair of PC}\\
+\location{Sep 2011 – May 2012}
+%\vspace{0.4em}
+\vspace{0.2em}
+\item 
+\descript{Programming}\\
+\normalsize C/C++, WinApi, OpenGL, HTML, CSS\\
+\location{Sep 2010 – May 2013}
+%\sectionsep
+\vspace{1.0em}
+\end{tightemize}
+
+\end{minipage} 
+\newpage
+
+\begin{minipage}[t]{0.66\textwidth} 
+\section{Course projects}
+\vspace{0.5em}
+\begin{tightemize}
+	\item  
+	\descript{Background and foreground estimation via Robust PCA}\\
+	\href{https://github.com/IgorSokoloff/background_and_foreground_estimation_via_rpca}{GitHub project page},
+	\href{https://nbviewer.jupyter.org/github/IgorSokoloff/background_and_foreground_estimation_via_rpca/blob/master/project.ipynb}{Source code}\\
+	\location{January 2020}
+	\vspace{0.2em}
+	\item  
+	\descript{Benchmarking of quasi-Newton methods}\\
+	\normalsize
+	\href{https://github.com/IgorSokoloff/benchmarking_of_quasi_newton_methods}{GitHub project page},
+	\href{http://nbviewer.jupyter.org/github/IgorSokoloff/benchmarking_of_quasi_newton_methods/blob/master/quasi\%20newton.ipynb}{Source code},
+	\href{https://github.com/IgorSokoloff/benchmarking_of_quasi_newton_methods/blob/master/poster/poster.pdf}{Poster}\\
+	\location{June 2018}
+	\vspace{0.2em}
+	\item  
+	\descript{Realization of the splitting scheme for the heat equation}\\
+	%\large{Python (numpy, matplotlib)}\\
+	%\vspace{0.2em}
+	\normalsize
+	Implemented the numerical solution for the two-dimensional heat equation}\\
+	\href{https://github.com/IgorSokoloff/two_dimensional_heat_equation_modelling}{GitHub project page},
+	\href{http://nbviewer.jupyter.org/github/IgorSokoloff/compmath/blob/master/Project_splitting_scheme.ipynb}{Source code}\\
+	\location{May 2017}
+	\vspace{0.2em}
+	\item  
+	\descript{Simple physical engine \& demonstration program}\\
+	%\large{Python (pygame)}\\
+	%\vspace{0.2em}
+	\normalsize
+	The project consists of a simple 2D physics engine and a program that uses this engine and draws the scene\\
+	\href{https://github.com/IgorSokoloff/MIPT_CS_4SEM_PROJECT.git}{GitHub project page},
+	\href{https://www.youtube.com/watch?v=pjhc5iVnPiU&t=105s}{YouTube demonstration}\\
+	\location{May 2016}
+\end{tightemize}	
+
+\begin{comment}
+\begin{tightemize}
+\item \un{\sm{\Large{Implementation of collision detection algorithm \& user interface}}}\\
+\large{C++, WinApi, OpenGL}\\
+\normalsize
+\begin{comment}
+Developed the collision detection algorithm for two spheres and the program which provides setting initial conditions and physical parameters and renderring the scene. The program has got the 2nd place in the annual programming conference.\\
+
+\location{May 2013}
+\end{tightemize}
+
+\begin{tightemize}
+\item  \un{\sm{\Large{2d game creator \& game:}}}\\
+\large {C++, OpenGL, Lua}\\
+\location{May 2012}
+\normalsize
+\end{tightemize}    
+%\sectionsep
+\end{comment}
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+	\section{Honors \& Awards} 
+	%\sectionsep
+	\vspace{0.5em}
+	\begin{tightemize}
+		\item 
+		\descript{Winner of the <<Phystech 2014>> Olympiad  on Physics}\\
+		\location{March 2014}
+		\item 
+		\descript{Winner of the regional stage of All-Russian Olympiad on Physics}\\
+		\location{October 2013}
+		\item 
+		\descript{2nd place at The Computer science conference for pupils}\\
+		\location{June 2013}
+		\item 
+		\descript{2nd place at The Computer science conference for pupils}\\
+		\location{June 2012}
+		\item 
+		\descript{Winner of The Programming Olympiad}\\
+		\location{June 2011}
+	\end{tightemize}
+\end{minipage}	
+\end{document} 
