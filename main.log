@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.18)  10 FEB 2020 18:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.18)  27 FEB 2020 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1779,6 +1779,31 @@ LaTeX Font Warning: Font shape `T2A/Lato-Lig(0)/bx/n' undefined
 * 
 * Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
 *************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
 [1
 
 ]
@@ -1813,7 +1838,7 @@ LaTeX Font Warning: Font shape `T2A/Lato-Lig(0)/bx/n' undefined
 * Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
 *************************************************
 ! Extra }, or forgotten \endgroup.
-l.317 ...on for the two-dimensional heat equation}
+l.327 ...on for the two-dimensional heat equation}
                                                   \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1891,33 +1916,52 @@ deleted material, e.g., by typing `I$}'.
 * 
 * Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
 *************************************************
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+*************************************************
+* fontspec warning: "only-luatex-feature"
+* 
+* Ignored LuaTeX only feature: 'Renderer=Full/Basic'.
+*************************************************
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 44781DF003AE11B518D316A435F25CB6.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B2D01651908BF1A40859AAB735A1CA60
-(rerunfilecheck)             After:  ABF22E11E68475D72EA5E5E8B75A850B.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
  26076 strings out of 492970
  465022 string characters out of 6133938
- 557812 words of memory out of 5000000
+ 558824 words of memory out of 5000000
  29773 multiletter control sequences out of 15000+600000
  545929 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,5n,118p,10388b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,5n,118p,10388b,684s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (2 pages).
